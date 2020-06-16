@@ -1,0 +1,71 @@
+/*
+	Weather page style
+	Created by Brian Chaves
+	Created on June 03, 2020
+	Updated on June 03, 2020
+*/
+:root{
+	--blue:#0080ff;
+	--light-blue:#80c0ff;
+	--dark-blue:#000080;
+	--light-yellow:#ffffc0;
+}
+body
+{
+	text-align: center;
+	background-color: var(--light-yellow);
+	color: var(--dark-blue);
+}
+.weather
+{
+	border: 1px black solid;
+	display: inline-block;
+	width: 12%;
+	vertical-align: top;
+}
+.red
+{
+	color: red;
+}
+#city-info
+{
+	border: 3px blue solid;
+}
+.weather-img
+{
+	max-width: 100px;
+	max-height: 100px;
+}
+.weather-img-big
+{
+	max-width: 250px;
+	max-height: 250px;
+}
+@media only screen and (max-width: 1500px)
+{
+	.weather
+	{
+		width: 24%;
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.weather
+	{
+		width: 32%;
+	}
+}
+@media only screen and (max-width: 600px)
+{
+	.weather
+	{
+		width: 49%;
+	}
+}
+@media only screen and (max-width: 400px)
+{
+	.weather
+	{
+		width: 100%;
+	}
+}

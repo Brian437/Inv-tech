@@ -1,0 +1,55 @@
+<html>
+<!--
+  Created by Brian Chaves
+  Created around June 01, 2020
+  Updated on June 03, 2020
+-->
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <link rel='stylesheet' type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Weather Website</h1>
+  <form>
+    <label>
+      City:
+      <input 
+        type="text" 
+        name="city"
+        id="city"
+      >
+    </label>
+    <br/>
+    <label>
+      <input type="radio" name="temperture" value="celsius" id="temperture-celsius">
+      Celsius
+    </label>
+    <label>
+      <input type="radio" name="temperture" value="fahrenheit" id="temperture-fahrenheit">
+      Fahrenheit
+    </label>
+    <br/>
+    <input 
+      type="button" 
+      name="btn-check-weather"
+      id="btn-check-weather"
+      onclick="btnCheckWeatherClick();"
+      value="Check Weather"
+    >
+  </form>
+  <div id="city-info">
+    
+  </div>
+  <div id="forcast">
+    
+  </div>
+</body>
+<script type="text/javascript" src="api.js"></script> 
+<script type="text/javascript" src="data.js"></script> 
+<script type="text/javascript" src="weather.js"></script> 
+<script type="text/javascript" src='direction.js'></script>
+<script type="text/javascript" src="home-js.js"></script> 
+
+
+</html>
