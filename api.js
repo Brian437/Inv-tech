@@ -16,7 +16,7 @@ const lngAndLatRequest=(location)=>
 }
 const currentWeatherInfoRequestByCity=(city,onLoadEvent)=>
 {
-  let requestURL=`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}`
+  let requestURL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}`
 
   let request = new XMLHttpRequest({mozSystem: true})
   request.open('GET', requestURL)
@@ -26,7 +26,7 @@ const currentWeatherInfoRequestByCity=(city,onLoadEvent)=>
 }
 const forcastWeatherInfoRequestByCity=(city,onLoadEvent)=>
 {
-  let requestURL=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${WEATHER_API_KEY}`
+  let requestURL=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${WEATHER_API_KEY}`
 
   let request = new XMLHttpRequest({mozSystem: true})
   request.open('GET', requestURL)
@@ -36,7 +36,7 @@ const forcastWeatherInfoRequestByCity=(city,onLoadEvent)=>
 }
 const currentWeatherInfoRequestByLngAndLat=(lng,lat,onLoadEvent)=>
 {
-  let requestURL=`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${WEATHER_API_KEY}`
+  let requestURL=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${WEATHER_API_KEY}`
 
   let request = new XMLHttpRequest({mozSystem: true})
   request.open('GET', requestURL)
@@ -46,7 +46,7 @@ const currentWeatherInfoRequestByLngAndLat=(lng,lat,onLoadEvent)=>
 }
 const forcastWeatherInfoRequestByLngAndLat=(lng,lat,onLoadEvent)=>
 {
-  let requestURL=`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&appid=${WEATHER_API_KEY}`
+  let requestURL=`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&appid=${WEATHER_API_KEY}`
 
   let request = new XMLHttpRequest({mozSystem: true})
   request.open('POST', requestURL)

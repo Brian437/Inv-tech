@@ -336,4 +336,3 @@ const titleCase=(string)=>
   sentence=sentence.join(" ")
   return sentence
 }
-startUp()
